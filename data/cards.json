@@ -1,0 +1,1017 @@
+[
+        {
+                "Id":1,
+                "Name":"3 Stage Atk",
+                "Type":"Command",
+                "Cost":0,
+                "Power":3,
+                "Descr":"+0-3CC",
+                "max_cc":3
+        },
+        {
+                "Id":2,
+                "Name":"4 Stage Atk",
+                "Type":"Command",
+                "Cost":0,
+                "Power":4,
+                "Descr":"+0-4CC",
+                "max_cc":4
+        },
+        {
+                "Id":3,
+                "Name":"5 Stage Atk",
+                "Type":"Command",
+                "Cost":0,
+                "Power":5,
+                "Descr":"+0-5CC",
+                "max_cc":5
+        },
+        {
+                "Id":4,
+                "Name":"6 Stage Atk",
+                "Type":"Command",
+                "Cost":0,
+                "Power":6,
+                "Descr":"+0-6CC",
+                "max_cc":6
+        },
+        {
+                "Id":5,
+                "Name":"Cont. Punch",
+                "Type":"Physical",
+                "Cost":10,
+                "Power":10,
+                "Accuracy":100
+        },
+        {
+                "Id":6,
+                "Name":"Cont. Kick",
+                "Type":"Physical",
+                "Cost":15,
+                "Power":20,
+                "Accuracy":80
+        },
+        {
+                "Id":7,
+                "Name":"Energy Beam",
+                "Type":"Beam",
+                "Cost":12,
+                "Power":15,
+                "Accuracy":90
+        },
+        {
+                "Id":8,
+                "Name":"Energy Bomb",
+                "Type":"Beam",
+                "Cost":10,
+                "Power":10,
+                "Accuracy":100
+        },
+        {
+                "Id":9,
+                "Name":"Special Card",
+                "Type":"?",
+                "Cost":0,
+                "Descr":"Akira!"
+        },
+        {
+                "Id":10,
+                "Name":"Masenko",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":95
+        },
+        {
+                "Id":11,
+                "Name":"Dunk Shot",
+                "Type":"Physical",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":12,
+                "Name":"Kamehameha",
+                "Type":"Beam",
+                "Cost":16,
+                "Power":20,
+                "Accuracy":100
+        },
+        {
+                "Id":13,
+                "Name":"Super Kameha",
+                "Type":"Beam",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":100
+        },
+        {
+                "Id":14,
+                "Name":"Ult. Kameha",
+                "Type":"Beam",
+                "Cost":33,
+                "Power":60,
+                "Accuracy":100,
+                "Descr":"team"
+        },
+        {
+                "Id":15,
+                "Name":"Sonic Kick",
+                "Type":"Physical",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":16,
+                "Name":"Resurrection",
+                "Type":"Support",
+                "Cost":10,
+                "Descr":"heal life/4, life/2 in defense"
+        },
+        {
+                "Id":17,
+                "Name":"SpclBeam Can",
+                "Type":"Beam",
+                "Cost":21,
+                "Power":30,
+                "Accuracy":75
+        },
+        {
+                "Id":18,
+                "Name":"F. Lightbomb",
+                "Type":"Beam",
+                "Cost":25,
+                "Power":35,
+                "Accuracy":100
+        },
+        {
+                "Id":19,
+                "Name":"Taiyoken",
+                "Type":"Defense",
+                "Def_type":"Physical",
+                "Cost":5,
+                "Descr":"avoid melee"
+        },
+        {
+                "Id":20,
+                "Name":"Mystic Ki",
+                "Type":"Beam",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":100
+        },
+        {
+                "Id":21,
+                "Name":"Destruc-Disk",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":80
+        },
+        {
+                "Id":22,
+                "Name":"S. Destruc-D.",
+                "Type":"Beam",
+                "Cost":28,
+                "Power":40,
+                "Accuracy":90
+        },
+        {
+                "Id":23,
+                "Name":"Kaio Ken",
+                "Type":"Support",
+                "Cost":10,
+                "Descr":"double str and ki"
+        },
+        {
+                "Id":24,
+                "Name":"Spirit Bomb",
+                "Type":"Beam",
+                "Cost":25,
+                "Power":35,
+                "Accuracy":90
+        },
+        {
+                "Id":25,
+                "Name":"Solid Shot",
+                "Type":"Physical",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":26,
+                "Name":"Teleport",
+                "Type":"Defense",
+                "Def_type":"Beam",
+                "Cost":5,
+                "Descr":"avoid projectiles"
+        },
+        {
+                "Id":27,
+                "Name":"S. Saiyan 2nd",
+                "Type":"Support",
+                "Boosts":{"Ki":8},
+                "Cost":7,
+                "Descr":"+8 ki"
+        },
+        {
+                "Id":28,
+                "Name":"S. Saiyan 3rd",
+                "Type":"Support",
+                "Boosts":{"Str":8},
+                "Cost":7,
+                "Descr":"+8 str"
+        },
+        {
+                "Id":29,
+                "Name":"Tail",
+                "Type":"Physical",
+                "Cost":26,
+                "Power":35,
+                "Accuracy":100,
+                "Descr":"unavoidable"
+        },
+        {
+                "Id":30,
+                "Name":"Galick-Gun",
+                "Type":"Beam",
+                "Cost":17,
+                "Power":20,
+                "Accuracy":100
+        },
+        {
+                "Id":31,
+                "Name":"Big Bang Atk",
+                "Type":"Beam",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":90
+        },
+        {
+                "Id":32,
+                "Name":"Final Flash",
+                "Type":"Beam",
+                "Cost":28,
+                "Power":40,
+                "Accuracy":95
+        },
+        {
+                "Id":33,
+                "Name":"Desper. Atk",
+                "Type":"Beam",
+                "Cost":31,
+                "Power":70,
+                "Accuracy":90,
+                "Descr":"user 1hp"
+        },
+        {
+                "Id":34,
+                "Name":"Rising Kick",
+                "Type":"Physical",
+                "Cost":24,
+                "Power":30,
+                "Accuracy":100
+        },
+        {
+                "Id":35,
+                "Name":"Burning Atk",
+                "Type":"Beam",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":36,
+                "Name":"Final Atk",
+                "Type":"Beam",
+                "Cost":26,
+                "Power":35,
+                "Accuracy":100
+        },
+        {
+                "Id":37,
+                "Name":"Flash Punch",
+                "Type":"Physical",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":38,
+                "Name":"Kamekameha",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":90
+        },
+        {
+                "Id":39,
+                "Name":"Galatica D.",
+                "Type":"Beam",
+                "Cost":10,
+                "Power":15,
+                "Accuracy":100
+        },
+        {
+                "Id":40,
+                "Name":"S. G. K. Atk",
+                "Type":"Beam",
+                "Cost":28,
+                "Power":40,
+                "Accuracy":80
+        },
+        {
+                "Id":41,
+                "Name":"BuuBall Slam",
+                "Type":"Physical",
+                "Cost":33,
+                "Power":60,
+                "Accuracy":100,
+                "Descr":"defeat"
+        },
+        {
+                "Id":42,
+                "Name":"Kiai",
+                "Type":"Support",
+                "Boosts":{"Guard":-1},
+                "Cost":8,
+                "Accuracy":95,
+                "Descr":"guard down"
+        },
+        {
+                "Id":43,
+                "Name":"Atomic Break",
+                "Type":"Physical",
+                "Cost":20,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":44,
+                "Name":"Flash Sword",
+                "Type":"Beam",
+                "Cost":26,
+                "Power":35,
+                "Accuracy":100
+        },
+        {
+                "Id":45,
+                "Name":"Barrier",
+                "Type":"Defense",
+                "Def_type":"Beam",
+                "Cost":5,
+                "Descr":"avoid beams only"
+        },
+        {
+                "Id":46,
+                "Name":"N. Slasher",
+                "Type":"Physical",
+                "Cost":24,
+                "Power":30,
+                "Accuracy":100
+        },
+        {
+                "Id":47,
+                "Name":"Kiblast Bomb",
+                "Type":"Beam",
+                "Cost":16,
+                "Power":20,
+                "Accuracy":90
+        },
+        {
+                "Id":48,
+                "Name":"Light Cannon",
+                "Type":"Beam",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":90
+        },
+        {
+                "Id":49,
+                "Name":"Telekinesis",
+                "Type":"Beam",
+                "Cost":14,
+                "Power":20,
+                "Accuracy":90
+        },
+        {
+                "Id":50,
+                "Name":"Mystic Sound",
+                "Type":"Beam",
+                "Cost":10,
+                "Power":15,
+                "Accuracy":100
+        },
+        {
+                "Id":51,
+                "Name":"Paralysis",
+                "Type":"Support",
+                "Boosts":{"Speed":-8},
+                "Cost":5,
+                "Accuracy":95,
+                "Descr":"-8 speed"
+        },
+        {
+                "Id":52,
+                "Name":"Time Freeze",
+                "Type":"Defense",
+                "Def_type":"Command",
+                "Cost":1,
+                "Descr":"interrupt commands"
+        },
+        {
+                "Id":53,
+                "Name":"Breath",
+                "Type":"Defense",
+                "Def_type":"Beam",
+                "Cost":5,
+                "Descr":"avoid beams only"
+        },
+        {
+                "Id":54,
+                "Name":"Eraser Can.",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":90
+        },
+        {
+                "Id":55,
+                "Name":"R. F. B. Atk",
+                "Type":"Physical",
+                "Cost":24,
+                "Power":35,
+                "Accuracy":50
+        },
+        {
+                "Id":56,
+                "Name":"Crasher Ball",
+                "Type":"Beam",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":57,
+                "Name":"Purple Comet",
+                "Type":"Beam",
+                "Cost":28,
+                "Power":40,
+                "Accuracy":95
+        },
+        {
+                "Id":58,
+                "Name":"P Comet Z",
+                "Type":"Physical",
+                "Cost":31,
+                "Power":50,
+                "Accuracy":100,
+                "Descr":"defeat"
+        },
+        {
+                "Id":59,
+                "Name":"Speed Up",
+                "Type":"Support",
+                "Boosts":{"Speed":8},
+                "Cost":7,
+                "Descr":"+8 speed"
+        },
+        {
+                "Id":60,
+                "Name":"Mach Attack",
+                "Type":"Physical",
+                "Cost":17,
+                "Power":20,
+                "Accuracy":100
+        },
+        {
+                "Id":61,
+                "Name":"Dynamite Hit",
+                "Type":"Physical",
+                "Cost":20,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":62,
+                "Name":"Body Change",
+                "Type":"Support",
+                "Cost":20,
+                "Accuracy":80,
+                "Descr":"unblockable"
+        },
+        {
+                "Id":63,
+                "Name":"Finger Beam",
+                "Type":"Beam",
+                "Cost":10,
+                "Power":15,
+                "Accuracy":100
+        },
+        {
+                "Id":64,
+                "Name":"Super Kiball",
+                "Type":"Beam",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":95
+        },
+        {
+                "Id":65,
+                "Name":"Grand Wave",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":90
+        },
+        {
+                "Id":66,
+                "Name":"Elbow Strike",
+                "Type":"Physical",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":90
+        },
+        {
+                "Id":67,
+                "Name":"Eye Beam",
+                "Type":"Beam",
+                "Cost":17,
+                "Power":20,
+                "Accuracy":100
+        },
+        {
+                "Id":68,
+                "Name":"Lock On",
+                "Type":"Support",
+                "Cost":4,
+                "Descr":"sure hit"
+        },
+        {
+                "Id":69,
+                "Name":"Rocket Punch",
+                "Type":"Physical",
+                "Cost":18,
+                "Power":30,
+                "Accuracy":30,
+                "Descr":"defeat"
+        },
+        {
+                "Id":70,
+                "Name":"Hell Flash",
+                "Type":"Beam",
+                "Cost":26,
+                "Power":40,
+                "Accuracy":70
+        },
+        {
+                "Id":71,
+                "Name":"Crazy Rush",
+                "Type":"Physical",
+                "Cost":23,
+                "Power":30,
+                "Accuracy":90
+        },
+        {
+                "Id":72,
+                "Name":"Energy Slash",
+                "Type":"Beam",
+                "Cost":18,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":73,
+                "Name":"Energy Slice",
+                "Type":"Beam",
+                "Cost":15,
+                "Power":20,
+                "Accuracy":90
+        },
+        {
+                "Id":74,
+                "Name":"18's Attack",
+                "Type":"Physical",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":75,
+                "Name":"Absorb Ki",
+                "Type":"Physical",
+                "Cost":15,
+                "Power":10,
+                "Accuracy":90,
+                "Descr":"steal life"
+        },
+        {
+                "Id":76,
+                "Name":"Absorb Enrgy",
+                "Type":"Defense",
+                "Def_type":"Beam",
+                "Cost":5,
+                "Descr":"avoid beam and heal"
+        },
+        {
+                "Id":77,
+                "Name":"Cell Combo",
+                "Type":"Physical",
+                "Cost":20,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":78,
+                "Name":"Step Up Atk",
+                "Type":"Physical",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":79,
+                "Name":"Flesh Guard",
+                "Type":"Support",
+                "Boosts":{"Guard":1},
+                "Cost":9,
+                "Descr":"raise guard"
+        },
+        {
+                "Id":80,
+                "Name":"Potbelly Atk",
+                "Type":"Physical",
+                "Cost":16,
+                "Power":20,
+                "Accuracy":100,
+                "Descr":"defeat"
+        },
+        {
+                "Id":81,
+                "Name":"Crasher Buu",
+                "Type":"Physical",
+                "Cost":20,
+                "Power":25,
+                "Accuracy":100
+        },
+        {
+                "Id":82,
+                "Name":"Sweet Beam",
+                "Type":"Beam",
+                "Cost":19,
+                "Power":25,
+                "Accuracy":90
+        },
+        {
+                "Id":83,
+                "Name":"Bulma",
+                "Type":"Support",
+                "Boosts":{"Str":-8},
+                "Cost":3,
+                "Accuracy":95,
+                "Descr":"-8 str"
+        },
+        {
+                "Id":84,
+                "Name":"Chiaotzu",
+                "Type":"Support",
+                "Boosts":{"Speed":-8},
+                "Cost":3,
+                "Accuracy":60,
+                "Descr":"-8 speed"
+        },
+        {
+                "Id":85,
+                "Name":"Tien",
+                "Type":"Support",
+                "Cost":6,
+                "Power":20,
+                "Accuracy":80,
+                "Descr":"knock enemy to ground *"
+        },
+        {
+                "Id":86,
+                "Name":"Yajirobe",
+                "Type":"Support",
+                "Cost":4,
+                "Power":10,
+                "Accuracy":100,
+                "Descr":"knock enemy to ground *"
+        },
+        {
+                "Id":87,
+                "Name":"Kaio",
+                "Type":"Support",
+                "Boosts":{"Ki":-8},
+                "Cost":3,
+                "Accuracy":90,
+                "Descr":"-8 ki"
+        },
+        {
+                "Id":88,
+                "Name":"Dende",
+                "Type":"Support",
+                "Cost":12,
+                "Descr":"large heal"
+        },
+        {
+                "Id":89,
+                "Name":"Guru",
+                "Type":"Support",
+                "Boosts":{"Str":8,"Ki":8},
+                "Cost":6,
+                "Descr":"+8 str and ki"
+        },
+        {
+                "Id":90,
+                "Name":"Hercule",
+                "Type":"Support",
+                "Cost":3,
+                "Power":5,
+                "Accuracy":100,
+                "Descr":"knock enemy to ground *"
+        },
+        {
+                "Id":91,
+                "Name":"Supreme Kai",
+                "Type":"Support",
+                "Boosts":{"Speed":-8},
+                "Cost":4,
+                "Accuracy":80,
+                "Descr":"-8 speed"
+        },
+        {
+                "Id":92,
+                "Name":"Kibito",
+                "Type":"Support",
+                "Cost":12,
+                "Descr":"immune to beam"
+        },
+        {
+                "Id":93,
+                "Name":"Babidi",
+                "Type":"Support",
+                "Cost":6,
+                "Accuracy":100,
+                "Descr":"reset enemy power ups"
+        },
+        {
+                "Id":94,
+                "Name":"Dabura",
+                "Type":"Support",
+                "Cost":12,
+                "Power":99999,
+                "Accuracy":20,
+                "Descr":"*"
+        },
+        {
+                "Id":95,
+                "Name":"Yakon",
+                "Type":"Support",
+                "Cost":4,
+                "Accuracy":100,
+                "Descr":"ends gather power"
+        },
+        {
+                "Id":96,
+                "Name":"New Scouter",
+                "Type":"Support",
+                "Boosts":{"Guard":-1},
+                "Cost":5,
+                "Accuracy":90,
+                "Descr":"guard down"
+        },
+        {
+                "Id":97,
+                "Name":"C. C. Fridge",
+                "Type":"Support",
+                "Cost":1,
+                "Descr":"+5 CC"
+        },
+        {
+                "Id":98,
+                "Name":"Qwk-Stop Dvc",
+                "Type":"Support",
+                "Cost":21,
+                "Accuracy":100,
+                "Descr":"kill androids up close, life/2 if distant"
+        },
+        {
+                "Id":99,
+                "Name":"Medical Mach",
+                "Type":"Support",
+                "Cost":8,
+                "Descr":"medium heal"
+        },
+        {
+                "Id":100,
+                "Name":"Rejuv Chmbr",
+                "Type":"Support",
+                "Cost":8,
+                "Descr":"reset user power downs"
+        },
+        {
+                "Id":101,
+                "Name":"Gravity Dvc",
+                "Type":"Support",
+                "Boosts":{"Speed":-8},
+                "Cost":5,
+                "Accuracy":90,
+                "Descr":"-8 speed"
+        },
+        {
+                "Id":102,
+                "Name":"Ki Absorber",
+                "Type":"Support",
+                "Cost":8,
+                "Power":10,
+                "Accuracy":85,
+                "Descr":"steal life *"
+        },
+        {
+                "Id":103,
+                "Name":"Sealed Ball",
+                "Type":"Support",
+                "Boosts":{"Str":-8,"Ki":-8},
+                "Cost":4,
+                "Accuracy":80,
+                "Descr":"-8 str and ki"
+        },
+        {
+                "Id":104,
+                "Name":"Trunks' Swrd",
+                "Type":"Support",
+                "Boosts":{"Str":8},
+                "Cost":4,
+                "Descr":"+8 str"
+        },
+        {
+                "Id":105,
+                "Name":"Dabura's Spr",
+                "Type":"Support",
+                "Boosts":{"Str":8},
+                "Cost":4,
+                "Descr":"+8 str"
+        },
+        {
+                "Id":106,
+                "Name":"Light Vest",
+                "Type":"Support",
+                "Boosts":{"Speed":8},
+                "Cost":6,
+                "Descr":"+8 speed"
+        },
+        {
+                "Id":107,
+                "Name":"Old Armor",
+                "Type":"Support",
+                "Boosts":{"Guard":1},
+                "Cost":7,
+                "Descr":"raise guard"
+        },
+        {
+                "Id":108,
+                "Name":"New Jkt",
+                "Type":"Support",
+                "Boosts":{"Guard":1},
+                "Cost":6,
+                "Descr":"raise guard"
+        },
+        {
+                "Id":109,
+                "Name":"Sunglasses",
+                "Type":"Support",
+                "Cost":3,
+                "Descr":"Can’t be stopped by taiyoken"
+        },
+        {
+                "Id":110,
+                "Name":"Gamebomb",
+                "Type":"Support",
+                "Cost":10,
+                "Power":25,
+                "Accuracy":90,
+                "Descr":"*"
+        },
+        {
+                "Id":111,
+                "Name":"Champ. Belt",
+                "Type":"Support",
+                "Cost":12,
+                "Descr":"immune to damg"
+        },
+        {
+                "Id":112,
+                "Name":"Spcl. Candy",
+                "Type":"Support",
+                "Cost":12,
+                "Power":30,
+                "Accuracy":80,
+                "Descr":"*"
+        },
+        {
+                "Id":113,
+                "Name":"Heart Virus",
+                "Type":"Support",
+                "Boosts":{"Str":-8,"Ki":-8},
+                "Cost":5,
+                "Accuracy":95,
+                "Descr":"-8 str and ki"
+        },
+        {
+                "Id":114,
+                "Name":"Heart Pills",
+                "Type":"Support",
+                "Cost":8,
+                "Descr":"reset user power downs"
+        },
+        {
+                "Id":115,
+                "Name":"Hourglass",
+                "Type":"Support",
+                "Cost":5,
+                "Accuracy":100,
+                "Descr":"remove enemy support icons"
+        },
+        {
+                "Id":116,
+                "Name":"Roshi’s book",
+                "Type":"Support",
+                "Cost":6,
+                "Power":5,
+                "Accuracy":100,
+                "Descr":"*"
+        },
+        {
+                "Id":117,
+                "Name":"Full Spirit",
+                "Type":"Support",
+                "Boosts":{"Ki":8},
+                "Cost":4,
+                "Descr":"+8 ki"
+        },
+        {
+                "Id":118,
+                "Name":"Afterimage",
+                "Type":"Support",
+                "Cost":4,
+                "Descr":"increase block/auto avoid chance"
+        },
+        {
+                "Id":119,
+                "Name":"Reading Ki",
+                "Type":"Support",
+                "Cost":4,
+                "Descr":"sure hit"
+        },
+        {
+                "Id":120,
+                "Name":"Feint",
+                "Type":"Support",
+                "Cost":4,
+                "Descr":"sure hit"
+        },
+        {
+                "Id":121,
+                "Name":"Endurance",
+                "Type":"Defense",
+                "Def_type":"All",
+                "Cost":7,
+                "Descr":"always block"
+        },
+        {
+                "Id":122,
+                "Name":"Telepathy",
+                "Type":"Defense",
+                "Def_type":"Command",
+                "Cost":1,
+                "Descr":"interrupt commands"
+        },
+        {
+                "Id":123,
+                "Name":"Foresight",
+                "Type":"Defense",
+                "Def_type":"Command",
+                "Cost":1,
+                "Descr":"interrupt commands"
+        },
+        {
+                "Id":124,
+                "Name":"Shockwave",
+                "Type":"Defense",
+                "Def_type":"Physical",
+                "Cost":5,
+                "Descr":"avoid melee"
+        },
+        {
+                "Id":125,
+                "Name":"Avoiding",
+                "Type":"Defense",
+                "Def_type":"Beam",
+                "Cost":5,
+                "Descr":"avoid projectiles"
+        }
+]

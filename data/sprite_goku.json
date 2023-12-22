@@ -1,0 +1,24 @@
+{
+	"tiles": [
+		{"x": 0, "y": 0, "c0_index": 202, "c1_index": 202, "char": "\u2588"},
+	 	{"x": 1, "y": 0, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 2, "y": 0, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 3, "y": 0, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 4, "y": 0, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 0, "y": 1, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 1, "y": 1, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 2, "y": 1, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 3, "y": 1, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 4, "y": 1, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 0, "y": 2, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 1, "y": 2, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 2, "y": 2, "c0_index": 202, "c1_index": 202, "char": "\u2588"}, 
+	 	{"x": 3, "y": 2, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 4, "y": 2, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 0, "y": 3, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 1, "y": 3, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 2, "y": 3, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 3, "y": 3, "c0_index": 202, "c1_index": 202, "char": "\u2580"}, 
+	 	{"x": 4, "y": 3, "c0_index": 202, "c1_index": 202, "char": "\u2580"}
+	 ]
+}

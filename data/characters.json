@@ -1,0 +1,546 @@
+[
+        {
+                "Id":1,
+                "Name":"Gohan (Teen)",
+                "DisplayName":"Gohan",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":80,
+                                "Speed":6,
+                                "Str":7,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":90,
+                                "Speed":8,
+                                "Str":11,
+                                "Ki":14
+                        },
+                        {
+                                "Form Name":"SSJ2",
+                                "HP":95,
+                                "Speed":9,
+                                "Str":12,
+                                "Ki":15
+                        }
+                ]
+
+        },
+        {
+                "Id":2,
+                "Name":"Piccolo",
+                "DisplayName":"Piccolo",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":85,
+                                "Speed":5,
+                                "Str":9,
+                                "Ki":14
+                        },
+                        {
+                                "Form Name":"Kami",
+                                "HP":95,
+                                "Speed":7,
+                                "Str":13,
+                                "Ki":16
+                        },
+                        {
+                                "Form Name":"Evil",
+                                "HP":105,
+                                "Speed":9,
+                                "Str":17,
+                                "Ki":19
+                        }
+                ]
+
+        },
+        {
+                "Id":3,
+                "Name":"Krillin",
+                "DisplayName":"Krillin",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":85,
+                                "Speed":6,
+                                "Str":8,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":4,
+                "Name":"Goku",
+                "DisplayName":"Goku",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":90,
+                                "Speed":6,
+                                "Str":9,
+                                "Ki":13
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":100,
+                                "Speed":8,
+                                "Str":13,
+                                "Ki":15
+                        },
+                        {
+                                "Form Name":"SSJ2",
+                                "HP":105,
+                                "Speed":9,
+                                "Str":15,
+                                "Ki":17
+                        },
+                        {
+                                "Form Name":"SSJ3",
+                                "HP":110,
+                                "Speed":10,
+                                "Str":17,
+                                "Ki":18
+                        }
+                ]
+
+        },
+        {
+                "Id":5,
+                "Name":"Vegeta",
+                "DisplayName":"Vegeta",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":95,
+                                "Speed":6,
+                                "Str":10,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":105,
+                                "Speed":8,
+                                "Str":14,
+                                "Ki":15
+                        },
+                        {
+                                "Form Name":"Majin",
+                                "HP":110,
+                                "Speed":9,
+                                "Str":15,
+                                "Ki":16
+                        }
+                ]
+
+        },
+        {
+                "Id":6,
+                "Name":"Gohan",
+                "DisplayName":"Gohan",
+                "Forms":[
+                        {
+                                "Form Name":"SSJ",
+                                "HP":90,
+                                "Speed":6,
+                                "Str":9,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"SSJ2",
+                                "HP":105,
+                                "Speed":9,
+                                "Str":15,
+                                "Ki":16
+                        },
+                        {
+                                "Form Name":"Ultimate",
+                                "HP":110,
+                                "Speed":10,
+                                "Str":17,
+                                "Ki":18
+                        }
+                ]
+
+        },
+        {
+                "Id":7,
+                "Name":"Trunks (Futur)",
+                "DisplayName":"Trunks",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":95,
+                                "Speed":6,
+                                "Str":9,
+                                "Ki":13
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":105,
+                                "Speed":8,
+                                "Str":13,
+                                "Ki":15
+                        }
+                ]
+
+        },
+        {
+                "Id":8,
+                "Name":"Goten",
+                "DisplayName":"Goten",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":90,
+                                "Speed":5,
+                                "Str":6,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":100,
+                                "Speed":7,
+                                "Str":10,
+                                "Ki":14
+                        }
+                ]
+
+        },
+        {
+                "Id":9,
+                "Name":"Trunks (Kid)",
+                "DisplayName":"Trunks",
+                "Forms":[
+                        {
+                                "Form Name":"Base",
+                                "HP":90,
+                                "Speed":5,
+                                "Str":7,
+                                "Ki":11
+                        },
+                        {
+                                "Form Name":"SSJ",
+                                "HP":100,
+                                "Speed":7,
+                                "Str":11,
+                                "Ki":13
+                        }
+                ]
+
+        },
+        {
+                "Id":10,
+                "Name":"Gotenks",
+                "DisplayName":"Gotenks",
+                "Forms":[
+                        {
+                                "Form Name":"SSJ",
+                                "HP":90,
+                                "Speed":7,
+                                "Str":8,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"SSJ3",
+                                "HP":110,
+                                "Speed":11,
+                                "Str":15,
+                                "Ki":17
+                        }
+                ]
+
+        },
+        {
+                "Id":11,
+                "Name":"Vegito",
+                "DisplayName":"Vegito",
+                "Forms":[
+                        {
+                                "Form Name":"SSJ",
+                                "HP":110,
+                                "Speed":10,
+                                "Str":17,
+                                "Ki":18
+                        }
+                ]
+
+        },
+        {
+                "Id":12,
+                "Name":"Nappa",
+                "DisplayName":"Nappa",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":90,
+                                "Speed":6,
+                                "Str":11,
+                                "Ki":10
+                        }
+                ]
+
+        },
+        {
+                "Id":13,
+                "Name":"Guldo",
+                "DisplayName":"Guldo",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":90,
+                                "Speed":6,
+                                "Str":6,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":14,
+                "Name":"Recoome",
+                "DisplayName":"Recoome",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":105,
+                                "Speed":7,
+                                "Str":12,
+                                "Ki":9
+                        }
+                ]
+
+        },
+        {
+                "Id":15,
+                "Name":"Jeice",
+                "DisplayName":"Jeice",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":100,
+                                "Speed":8,
+                                "Str":9,
+                                "Ki":13
+                        }
+                ]
+
+        },
+        {
+                "Id":16,
+                "Name":"Burter",
+                "DisplayName":"Burter",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":95,
+                                "Speed":12,
+                                "Str":10,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":17,
+                "Name":"Ginyu",
+                "DisplayName":"Ginyu",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":11,
+                                "Ki":14
+                        },
+                        {
+                                "Form Name":"Goku",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":15,
+                                "Ki":14
+                        }
+                ]
+
+        },
+        {
+                "Id":18,
+                "Name":"Frieza",
+                "DisplayName":"Frieza",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":12,
+                                "Ki":13
+                        }
+                ]
+
+        },
+        {
+                "Id":19,
+                "Name":"No 16",
+                "DisplayName":"No 16",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":110,
+                                "Speed":7,
+                                "Str":12,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":20,
+                "Name":"No 17",
+                "DisplayName":"No 17",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":12,
+                                "Ki":13
+                        }
+                ]
+
+        },
+        {
+                "Id":21,
+                "Name":"No 18",
+                "DisplayName":"No 18",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":10,
+                                "Ki":15
+                        }
+                ]
+
+        },
+        {
+                "Id":22,
+                "Name":"No 19",
+                "DisplayName":"No 19",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":80,
+                                "Speed":6,
+                                "Str":9,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":23,
+                "Name":"No 20",
+                "DisplayName":"No 20",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":85,
+                                "Speed":6,
+                                "Str":9,
+                                "Ki":12
+                        }
+                ]
+
+        },
+        {
+                "Id":24,
+                "Name":"Cell",
+                "DisplayName":"Cell",
+                "Forms":[
+                        {
+                                "Form Name":"First",
+                                "HP":90,
+                                "Speed":7,
+                                "Str":10,
+                                "Ki":14
+                        },
+                        {
+                                "Form Name":"Second",
+                                "HP":100,
+                                "Speed":9,
+                                "Str":14,
+                                "Ki":16
+                        },
+                        {
+                                "Form Name":"Perfect",
+                                "HP":105,
+                                "Speed":10,
+                                "Str":15,
+                                "Ki":18
+                        }
+                ]
+
+        },
+        {
+                "Id":25,
+                "Name":"Cell Jr",
+                "DisplayName":"Cell Jr",
+                "Forms":[
+                        {
+                                "Form Name":"Normal",
+                                "HP":80,
+                                "Speed":8,
+                                "Str":8,
+                                "Ki":13
+                        }
+                ]
+
+        },
+        {
+                "Id":26,
+                "Name":"Buu",
+                "DisplayName":"Buu",
+                "Forms":[
+                        {
+                                "Form Name":"Fat",
+                                "HP":95,
+                                "Speed":8,
+                                "Str":11,
+                                "Ki":12
+                        },
+                        {
+                                "Form Name":"Evil",
+                                "HP":100,
+                                "Speed":7,
+                                "Str":10,
+                                "Ki":11
+                        },
+                        {
+                                "Form Name":"Gotenks",
+                                "HP":115,
+                                "Speed":11,
+                                "Str":15,
+                                "Ki":18
+                        },
+                        {
+                                "Form Name":"Gohan",
+                                "HP":120,
+                                "Speed":10,
+                                "Str":18,
+                                "Ki":16
+                        },
+                        {
+                                "Form Name":"Normal",
+                                "HP":105,
+                                "Speed":17,
+                                "Str":14,
+                                "Ki":15
+                        }
+                ]
+
+        }
+]
