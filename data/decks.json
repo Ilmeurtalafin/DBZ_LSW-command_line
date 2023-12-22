@@ -1,0 +1,77 @@
+{
+	"Damage":
+	{
+		"cards":[
+		"Dunk Shot",
+		"Cont. Kick",
+		"Cont. Punch",
+		"Cont. Punch",
+		"Kamehameha",
+		"Energy Bomb",
+		"Energy Beam",
+		"Energy Beam",
+		"3 Stage Atk",
+		"Heart Virus",
+		"Kaio Ken",
+		"Bulma",
+		"Light Vest",
+		"Chiaotzu",
+		"C. C. Fridge",
+		"4 Stage Atk",
+		"Speed Up",
+		"Full Spirit",
+		"Endurance",
+		"Avoiding"
+		]
+	},
+	"Beam":
+	{
+		"cards":[
+		"Masenko",
+		"Energy Beam",
+		"Energy Bomb",
+		"Energy Bomb",
+		"Kamehameha",
+		"Cont. Punch",
+		"Cont. Kick",
+		"Cont. Kick",
+		"3 Stage Atk",
+		"4 Stage Atk",
+		"Chiaotzu",
+		"Chiaotzu",
+		"Bulma",
+		"Full Spirit",
+		"Shockwave",
+		"4 Stage Atk",
+		"Speed Up",
+		"Full Spirit",
+		"Endurance",
+		"Avoiding"
+		]
+	},
+	"Vegeta":
+	{
+		"cards":[
+		"4 Stage Atk",
+		"4 Stage Atk",
+		"4 Stage Atk",
+		"5 Stage Atk",
+		"5 Stage Atk",
+		"Avoiding",
+		"Avoiding",
+		"Avoiding",
+		"Cont. Kick",
+		"Cont. Kick",
+		"Destruc-Disk",
+		"Full Spirit",
+		"Full Spirit",
+		"Galick-Gun",
+		"Galick-Gun",
+		"Gravity Dvc",
+		"Kiao",
+		"Shockwave",
+		"Shockwave",
+		"Tien"
+		]
+	}
+}

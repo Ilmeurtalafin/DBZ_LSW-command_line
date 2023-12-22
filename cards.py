@@ -8,8 +8,8 @@ f_cards = open('./data/cards.json',)
 all_cards = json.load(f_cards)  
 f_cards.close()
 
-f_deck = open('./data/deck_0.json',)
-deck_json = json.load(f_deck)  
+f_deck = open('./data/decks.json',)
+deck_json = json.load(f_deck)
 f_deck.close()
 
 card_3_stg_atk=list(filter(lambda card : card["Name"]=="3 Stage Atk",all_cards))[0]
@@ -20,5 +20,8 @@ cards=list(filter(lambda card : card["Type"]=="Physical" or card["Type"]=="Beam"
 ,all_cards))
 cards_def=list(filter(lambda card : card["Type"]=="Defense",all_cards))
 
-deck=[list(filter(lambda card : card["Name"]==card_name,all_cards))[0] for card_name in deck_json["cards"]]
+def get_deck_by_name(deck_name):
+	return list(filter(lambda card : card["Name"] in deck_json[deck_name]["cards"],all_cards))
+
+deck=get_deck_by_name("Damage")
 

@@ -13,7 +13,7 @@ f_chara.close()
 
 class character:
 
-	def __init__(self,chara_json={"Id": 0, "Name": "DefaultChara", "DisplayName": "CharaName", "Form Name": "Normal", "HP": 100, "Speed": 10, "Str": 10, "Ki": 10}):
+	def __init__(self,chara_json={"Id": 0, "Name": "DefaultChara", "DisplayName": "CharaName", "Form Name": "Normal", "HP": 100, "Speed": 10, "Str": 10, "Ki": 10},deck_name="Damage"):
 		self.id=chara_json["Id"]
 		self.name=chara_json["Name"]
 		self.display_name=chara_json["DisplayName"]
@@ -33,7 +33,7 @@ class character:
 
 		self.guard_buff=0
 
-		self.deck=list(deck) # "deep copy"
+		self.deck=get_deck_by_name(deck_name)
 		random.shuffle(self.deck)
 		self.hand=[ self.deck.pop(0) for i in range(3)]
 		self.limits=[card_kameha,card_5_stg_atk]

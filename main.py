@@ -594,7 +594,7 @@ def start_fight():
 	random_form1=np.random.choice(random_character1["Forms"],1)[0]
 	player1_chara = {k: v for k, v in random_character1.items() if k!="Forms"}|{k: v for k, v in random_form1.items()}
 
-	characters=[character(player0_chara),character(player1_chara)]
+	characters=[character(player0_chara,deck_name="Damage"),character(player1_chara,deck_name="Vegeta")]
 
 	# orange battle screen
 	print_json_img(battle_screen_json,0,0)
