@@ -37,6 +37,7 @@ class character:
 		random.shuffle(self.deck)
 		self.hand=[ self.deck.pop(0) for i in range(3)]
 		self.limits=[card_kameha,card_5_stg_atk]
+		self.limits=get_limits_by_char(self.name)
 
 		self.kibito=False
 		self.champ_belt=False

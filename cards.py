@@ -12,6 +12,10 @@ f_deck = open('./data/decks.json',)
 deck_json = json.load(f_deck)
 f_deck.close()
 
+f_limit = open('./data/limits.json',)
+limit_json = json.load(f_limit)
+f_limit.close()
+
 card_3_stg_atk=list(filter(lambda card : card["Name"]=="3 Stage Atk",all_cards))[0]
 card_4_stg_atk=list(filter(lambda card : card["Name"]=="4 Stage Atk",all_cards))[0]
 card_5_stg_atk=list(filter(lambda card : card["Name"]=="5 Stage Atk",all_cards))[0]
@@ -22,6 +26,9 @@ cards_def=list(filter(lambda card : card["Type"]=="Defense",all_cards))
 
 def get_deck_by_name(deck_name):
 	return list(filter(lambda card : card["Name"] in deck_json[deck_name]["cards"],all_cards))
+
+def get_limits_by_char(char_name):
+	return [list(filter(lambda card : card["Name"]==card_name,all_cards))[0] for card_name in list(limit_json[char_name])]
 
 deck=get_deck_by_name("Damage")
 
