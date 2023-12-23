@@ -575,7 +575,19 @@ def get_menu_items_from_card_list(character,card_list,turn_type,default_valid=Tr
 
 		isvalid=isvalid_turn and isvalid_cost and default_valid
 		item_color=[color_mgrey_on_dgrey,color_white_on_dgrey][isvalid]
-		menu_items+=[{"item_text":item_text,"item_colors":item_color,"is_valid":isvalid,"item_descriptions":[{"text":card["Name"],"text_colors":color_dgrey_on_white,"text_position":[TXT_BOX_X_ORIGIN,TXT_BOX_Y_ORIGIN+1]},
+		item_descr_txt=card["Name"]
+		item_descr_txt+=u"\u001b[1B"#down 1 line
+		item_descr_txt+=u"\u001b["+str(len(card["Name"]))+"D"#back to start of line
+		if card["Type"]=="Beam":
+			item_descr_txt+="Pow. "+str(card["Power"])+"/"+"Beam"
+		elif card["Type"]=="Physical":
+			item_descr_txt+="Pow. "+str(card["Power"])+"/"+"Damg"
+		elif card["Type"]=="Command":
+			item_descr_txt+="Pow. --/"+"Comm"
+		elif "Descr" in card.keys():
+			item_descr_txt+=card["Descr"]
+			
+		menu_items+=[{"item_text":item_text,"item_colors":item_color,"is_valid":isvalid,"item_descriptions":[{"text":item_descr_txt,"text_colors":color_dgrey_on_white,"text_position":[TXT_BOX_X_ORIGIN,TXT_BOX_Y_ORIGIN+1]},
 																							  {"text":str(card["Cost"]).rjust(2,"0"),"text_colors":item_color,"text_position":[N_COL-5,N_LIN-2]}]}]
 	return menu_items
 
@@ -801,7 +813,7 @@ def start_fight():
 					if card["Type"]=="Beam" or card["Type"]=="Physical" or card["Type"]=="Command":
 						if characters[1].card_cost>card["Cost"]:
 							if ai_action==None or  card["Power"]>ai_action["card"]["Power"]:
-								ai_action={"type":"card","card":card}
+								ai_action={"type":"card","card":card,"index":i}
 
 			# Basic command atk
 			if ai_action==None:
