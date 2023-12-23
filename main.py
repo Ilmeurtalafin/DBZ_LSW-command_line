@@ -795,6 +795,14 @@ def start_fight():
 					elif characters[1].card_cost>=15:
 						ai_action={"type":"gather_power"}
 
+			if ai_action==None:
+				for i in range(len(characters[1].hand)):
+					card=characters[1].hand[i]
+					if card["Type"]=="Beam" or card["Type"]=="Physical" or card["Type"]=="Command":
+						if characters[1].card_cost>card["Cost"]:
+							if ai_action==None or  card["Power"]>ai_action["card"]["Power"]:
+								ai_action={"type":"card","card":card}
+
 			# Basic command atk
 			if ai_action==None:
 				ai_action={"type":"card","card":[card_3_stg_atk,card_4_stg_atk][characters[1].powered_up_counter>0]}
