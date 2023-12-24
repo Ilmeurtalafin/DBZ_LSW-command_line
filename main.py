@@ -586,7 +586,7 @@ def get_menu_items_from_card_list(character,card_list,turn_type,default_valid=Tr
 			item_descr_txt+="Pow. --/"+"Comm"
 		elif "Descr" in card.keys():
 			item_descr_txt+=card["Descr"]
-			
+
 		menu_items+=[{"item_text":item_text,"item_colors":item_color,"is_valid":isvalid,"item_descriptions":[{"text":item_descr_txt,"text_colors":color_dgrey_on_white,"text_position":[TXT_BOX_X_ORIGIN,TXT_BOX_Y_ORIGIN+1]},
 																							  {"text":str(card["Cost"]).rjust(2,"0"),"text_colors":item_color,"text_position":[N_COL-5,N_LIN-2]}]}]
 	return menu_items
@@ -610,6 +610,14 @@ def start_fight():
 
 	# orange battle screen
 	print_json_img(battle_screen_json,0,0)
+	print_custom(color_white_on_dgrey+"Player"+ansi_code["Reset"],CHARACTER_NAME_POS_X,1)
+	print_custom(color_white_on_dgrey+"Enemy"+ansi_code["Reset"],N_COL-len("Enemy")-CHARACTER_NAME_POS_X,1)
+	
+	print_custom(u"\u001b[38;5;214m"+ansi_code["BG_Grey_Dark"]+"Battle"+ansi_code["Reset"],CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y-7)
+	print_custom(u"\u001b[38;5;214m"+ansi_code["BG_Grey_Dark"]+"Battle"+ansi_code["Reset"],N_COL-len("Battle")-CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y-7)
+	print_custom(u"\u001b[38;5;214m"+ansi_code["BG_Grey_Dark"]+"Battle"+ansi_code["Reset"],CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y+13)
+	print_custom(u"\u001b[38;5;214m"+ansi_code["BG_Grey_Dark"]+"Battle"+ansi_code["Reset"],N_COL-len("Battle")-CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y+13)
+	
 	# print names
 	print_custom(color_white_on_dgrey+characters[0].display_name+ansi_code["Reset"],CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y)
 	print_custom(color_white_on_dgrey+characters[1].display_name+ansi_code["Reset"],N_COL-len(characters[1].display_name)-CHARACTER_NAME_POS_X,CHARACTER_NAME_POS_Y)
