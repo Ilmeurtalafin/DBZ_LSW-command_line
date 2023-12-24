@@ -2,9 +2,9 @@
 
 DBZ LSW command line demake. 
 
-Everything thing done through printing special characters to the command line. 
+Everything done through printing special characters (ANSI escape codes) to the command line. 
 See : https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
-Display could be messy with custom command shell settings.
+Display could be messy with custom command line settings.
 Tested only with Python 3.11.1 on Windows 10.
 
 ### Prerequisites
