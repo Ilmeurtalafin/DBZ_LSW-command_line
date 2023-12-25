@@ -560,7 +560,75 @@ def support_card(character,opponent,card,turn_type):
 	# Hourglass what are support icons?
 	# Roshi’s book how are damage computed?
 
+def apply_actions(character_atk,character_def,action_atk,action_def,turn_type):
+	# update characters
+	match action_def["type"]:
+		case "guard":
+			character_def.guard=True
+		case "movement":
+			character_def.position=action_def["new_position"]
+		case "card":
+			character_def.card_cost-=action_def["card"]["Cost"]
 
+			# TODO func handling support cards
+			if action_def["card"]["Type"]=="Support":
+				support_card(character_def,character_atk,action_def["card"],turn_type)
+
+			# if card if from hand, remove it
+			if "index" in action_def.keys():
+				del character_def.hand[action_def["index"]]
+
+	match action_atk["type"]:
+		case "gather_power":
+			if character_atk.powered_up_counter==0: # add gathered power buffs only if not already in gathered state
+				character_atk.str+=4 
+				character_atk.ki+=4 
+			character_atk.powered_up_counter=3
+		case "card":
+			computed_damage=0
+
+			if "Power" in action_atk["card"].keys():
+				computed_damage=compute_card_damage(character_atk,character_def,action_atk["card"])
+
+			damage_coef=1.0
+
+			if action_def["type"]=="card":
+				if action_def["card"]["Type"]=="Defense":
+					# damage cancelled/avoided
+					if action_def["card"]["Def_type"]==action_atk["card"]["Type"]:
+						if action_def["card"]["Name"]=="Taiyoken" and character_atk.sunglasses:
+							pass
+						else :
+							damage_coef=0.0
+					# damage endured
+					elif action_def["card"]["Name"]=="Endurance":
+						computed_damage=action_atk["card"]["Cost"]
+
+			if action_atk["card"]["Type"]=="Beam" and character_def.kibito:
+				damage_coef=0.0
+				character_def.kibito=False
+
+			if action_atk["card"]["Type"]=="Physical" and character_def.champ_belt:
+				damage_coef=0.0
+				character_def.champ_belt=False
+
+			if action_atk["card"]["Type"]=="Command":
+				# TODO command inputs
+				character_atk.card_cost+=action_atk["card"]["max_cc"]
+			elif action_atk["card"]["Type"]=="Support":
+				support_card(character_atk,character_def,action_atk["card"],turn_type)
+			
+			character_atk.card_cost-=action_atk["card"]["Cost"]
+
+			final_damage=int(computed_damage*damage_coef)
+
+			character_def.hp=max(0,character_def.hp-final_damage)
+			if action_atk["card"]["Name"]=="Ki Absorber":
+				character_atk.hp=min(character_atk.hp_max,character_atk.hp+final_damage)
+
+			# index in keys mean card is from hand
+			if "index" in action_atk.keys():
+				del character_atk.hand[action_atk["index"]]
 
 
 def is_fight_over(characters):
@@ -889,74 +957,7 @@ def start_fight():
 		previous_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
 		current_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
 		
-		# update characters
-		match action_def["type"]:
-			case "guard":
-				character_def.guard=True
-			case "movement":
-				character_def.position=action_def["new_position"]
-			case "card":
-				character_def.card_cost-=action_def["card"]["Cost"]
-
-				# TODO func handling support cards
-				if action_def["card"]["Type"]=="Support":
-					support_card(character_def,character_atk,action_def["card"],turn_types[turn_num%2])
-
-				# if card if from hand, remove it
-				if "index" in action_def.keys():
-					del character_def.hand[action_def["index"]]
-
-		match action_atk["type"]:
-			case "gather_power":
-				if character_atk.powered_up_counter==0: # add gathered power buffs only if not already in gathered state
-					character_atk.str+=4 
-					character_atk.ki+=4 
-				character_atk.powered_up_counter=3
-			case "card":
-				computed_damage=0
-
-				if "Power" in action_atk["card"].keys():
-					computed_damage=compute_card_damage(character_atk,character_def,action_atk["card"])
-
-				damage_coef=1.0
-
-				if action_def["type"]=="card":
-					if action_def["card"]["Type"]=="Defense":
-						# damage cancelled/avoided
-						if action_def["card"]["Def_type"]==action_atk["card"]["Type"]:
-							if action_def["card"]["Name"]=="Taiyoken" and character_atk.sunglasses:
-								pass
-							else :
-								damage_coef=0.0
-						# damage endured
-						elif action_def["card"]["Name"]=="Endurance":
-							computed_damage=action_atk["card"]["Cost"]
-
-				if action_atk["card"]["Type"]=="Beam" and character_def.kibito:
-					damage_coef=0.0
-					character_def.kibito=False
-
-				if action_atk["card"]["Type"]=="Physical" and character_def.champ_belt:
-					damage_coef=0.0
-					character_def.champ_belt=False
-
-				if action_atk["card"]["Type"]=="Command":
-					# TODO command inputs
-					character_atk.card_cost+=action_atk["card"]["max_cc"]
-				elif action_atk["card"]["Type"]=="Support":
-					support_card(character_atk,character_def,action_atk["card"],turn_types[turn_num%2])
-				
-				character_atk.card_cost-=action_atk["card"]["Cost"]
-
-				final_damage=int(computed_damage*damage_coef)
-
-				character_def.hp=max(0,character_def.hp-final_damage)
-				if action_atk["card"]["Name"]=="Ki Absorber":
-					character_atk.hp=min(character_atk.hp_max,character_atk.hp+final_damage)
-
-				# index in keys mean card is from hand
-				if "index" in action_atk.keys():
-					del character_atk.hand[action_atk["index"]]
+		apply_actions(character_atk,character_def,action_atk,action_def,turn_types[turn_num%2])
 
 
 		current_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
