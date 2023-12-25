@@ -609,12 +609,14 @@ def start_fight():
 
 	# random_character0=np.random.choice(characters_json,1)[0]
 	random_character0=list(filter(lambda chara : chara["Name"]=="Goku",characters_json))[0]
-	random_form0=np.random.choice(random_character0["Forms"],1)[0]
+	# random_form0=np.random.choice(random_character0["Forms"],1)[0]
+	random_form0=random_character0["Forms"][0]
 	player0_chara = {k: v for k, v in random_character0.items() if k!="Forms"}|{k: v for k, v in random_form0.items()}
 
 	# random_character1=np.random.choice(characters_json,1)[0]
 	random_character1=list(filter(lambda chara : chara["Name"]=="Vegeta",characters_json))[0]
-	random_form1=np.random.choice(random_character1["Forms"],1)[0]
+	# random_form1=np.random.choice(random_character1["Forms"],1)[0]
+	random_form1=random_character1["Forms"][0]
 	player1_chara = {k: v for k, v in random_character1.items() if k!="Forms"}|{k: v for k, v in random_form1.items()}
 
 	characters=[character(player0_chara,deck_name="Damage"),character(player1_chara,deck_name="Vegeta")]
@@ -679,7 +681,7 @@ def start_fight():
 		print_HUD(characters)
 		print_sprites(characters)
 		print_atk_def(turn_types[turn_num%2])
-		# print_debug(characters)
+		print_debug(characters)
 		
 		# choose atk/def turn menu
 		cur_menu_items=menu_items[turn_types[turn_num%2]]
@@ -878,13 +880,14 @@ def start_fight():
 				else :
 					break
 			action_atk["card"]["max_cc"]=counter
-			action_atk["card"]["Power"]=counter/2.0
+			action_atk["card"]["Power"]=counter
 
 
 		print_action(def_action_descr,1)
 
 		
-		
+		previous_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
+		current_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
 		
 		# update characters
 		match action_def["type"]:
@@ -946,22 +949,28 @@ def start_fight():
 				character_atk.card_cost-=action_atk["card"]["Cost"]
 
 				final_damage=int(computed_damage*damage_coef)
-				for i in range(final_damage):
-					character_def.hp-=1
-					print_HUD(characters)
-					time.sleep(0.01)
 
+				character_def.hp=max(0,character_def.hp-final_damage)
 				if action_atk["card"]["Name"]=="Ki Absorber":
-					for i in range(final_damage):
-						character_atk.hp+=1
-						print_HUD(characters)
-						time.sleep(0.01)
+					character_atk.hp=min(character_atk.hp_max,character_atk.hp+final_damage)
 
-
+				# index in keys mean card is from hand
 				if "index" in action_atk.keys():
 					del character_atk.hand[action_atk["index"]]
 
 
+		current_hp={"ATK":character_atk.hp,"DEF":character_def.hp}
+
+		# Display animated HP change
+		for hp in range(previous_hp["DEF"],current_hp["DEF"]-1,-1):
+			character_def.hp=hp
+			print_HUD(characters)
+			time.sleep(0.01)
+		
+		for hp in range(previous_hp["ATK"],current_hp["ATK"]+1,1):
+			character_atk.hp=hp
+			print_HUD(characters)
+			time.sleep(0.01)
 
 		# prepare next turn
 		turn_num+=1
@@ -970,6 +979,7 @@ def start_fight():
 			turn_types=["ATK","DEF"] if characters[0].spd>=characters[1].spd else ["DEF","ATK"]
 
 
+		# back to 1st menu choice
 		index=0
 
 		if turn_types[turn_num%2]=="ATK" and characters[0].powered_up_counter>0:
@@ -1044,9 +1054,5 @@ def init_game():
 
 
 init_console()
-
-# for card in deck:
-# 	print(card)
-# input()
 
 init_game()

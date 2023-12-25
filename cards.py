@@ -28,7 +28,10 @@ def get_deck_by_name(deck_name):
 	return list(filter(lambda card : card["Name"] in deck_json[deck_name]["cards"],all_cards))
 
 def get_limits_by_char(char_name):
-	return [list(filter(lambda card : card["Name"]==card_name,all_cards))[0] for card_name in list(limit_json[char_name])]
+	if char_name in limit_json.keys():
+		return [list(filter(lambda card : card["Name"]==card_name,all_cards))[0] for card_name in list(limit_json[char_name])]
+	else:
+		return []
 
 deck=get_deck_by_name("Damage")
 
