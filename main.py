@@ -541,10 +541,21 @@ def support_card(character,opponent,card,turn_type):
 	# Spcl. Candy
 
 	## heal amount
-	# dende
+	# Dende
+	if card["Name"]=="Dende":
+		if turn_type=="ATK":
+			character.hp=min(character.hp_max,character.hp+character.hp_max/3)
+		if turn_type=="DEF":
+			character.hp=min(character.hp_max,character.hp+character.hp_max/4)
 	# Medical Mach
+	if card["Name"]=="Medical Mach":
+		character.hp=min(character.hp_max,character.hp+20)
+
 
 	# Qwk-Stop Dvc killandroid
+	if card["Name"]=="Qwk-Stop Dvc":
+		if opponent.display_name in [f'No {i}' for i in range(25)]:
+			opponent.hp=0
 
 	# Hourglass what are support icons?
 	# Roshi’s book how are damage computed?
